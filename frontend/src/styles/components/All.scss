@@ -1,0 +1,29 @@
+.bigTitle {
+  color: $colorA;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 15px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  font-weight: 600;
+
+  @media screen and (max-width: 850px) {
+    padding-left: 8%;
+  }
+}
+
+.bigTitle2 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 15px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  font-weight: 600;
+
+  @media screen and (max-width: 850px) {
+    padding-left: 8%;
+  }
+}
