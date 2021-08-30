@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React, {useState} from 'react';
 import Header from '../components/Header';
-import Banner from "../components/Banner"
+import Banner, {ArrowForward, ArrowRight, Button} from "../components/Banner"
 import BodyContainer from "../components/BodyContainer"
 import MainContainer from "../components/MainContainer"
 import ProfilPictures from "../components/ProfilPictures"
@@ -9,7 +9,7 @@ import { homeObjOne, homeObjTwo } from '../Data/Data';
 import styled from 'styled-components'
 import loginImage from "../images/test.jpg";
 import Formations from "../components/Formations";
-import {Formation1} from "../Data/DataFormation";
+import {Experience1, Experience2, Experience3, Formation1, Formation2, Formation3} from "../Data/DataFormation";
 import {AiOutlineRight} from "react-icons/all";
 
 export const BodyCont = styled.div`
@@ -72,9 +72,19 @@ export const ImageBG = styled.div`
 const Presentation = () => {
 
     const [formation, setFormation] = useState(false)
+    const [experience, setExperience] = useState(false)
 
     const handleFormation = () => {
         setFormation(!formation)
+    }
+
+    const handleExperience = () => {
+        setExperience(!experience)
+    }
+
+    const [hover, setHover] = useState(false);
+    const onHover = () => {
+        setHover(!hover)
     }
 
     return (
@@ -88,13 +98,14 @@ const Presentation = () => {
             <Banner />
             <BodyCont>
                 <ProfilPictures />
-                <div className='titre' onClick={handleFormation}>
-                    <AiOutlineRight className={formation ? 'display-icons-none' : 'display-icons'}/>
-                    <h1 className='text'>Mes Formations</h1>
+                <div className='titre' onClick={handleExperience}>
+                    <AiOutlineRight className={experience ? 'display-icons-none' : 'display-icons'}/>
+                    <h1 className='text'>Mes Experiences</h1>
                 </div>
-                <div className={formation ? 'listwrapper display' : 'listwrapper display-none'}>
-                    <Formations {...Formation1}/>
-                    <Formations {...Formation1}/>
+                <div className={experience ? 'listwrapper display' : 'listwrapper display-none'}>
+                    <Formations {...Experience1}/>
+                    <Formations {...Experience2}/>
+                    <Formations {...Experience3}/>
                 </div>
             </BodyCont>
 
@@ -105,7 +116,15 @@ const Presentation = () => {
                 </div>
                 <div className={formation ? 'listwrapper display' : 'listwrapper display-none'}>
                     <Formations {...Formation1}/>
-                    <Formations {...Formation1}/>
+                    <Formations {...Formation2}/>
+                    <Formations {...Formation3}/>
+                    <div className='btnwrap'>
+                    <button className='btn2' to="/"
+                            onMouseEnter={onHover}
+                            onMouseLeave={onHover}>
+                        Go further {hover ? <ArrowForward /> : <ArrowRight />}
+                    </button>
+                    </div>
                 </div>
             </div>
             <Footer>

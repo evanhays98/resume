@@ -27,3 +27,74 @@
     padding-left: 8%;
   }
 }
+
+.btn2 {
+  border-radius: 50px;
+  background: $colorB;
+  white-space: nowrap;
+  padding: 14px 48px;
+  color: $background;
+  color: $background;
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background: $colorA;
+    color: $colorC;
+  }
+}
+
+.btn{
+  min-width: 110px;
+  border-radius: 5px;
+  padding: 10px 5px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0 1px 5px 0 rgba(0.2,0.2,0.3,0.2);
+}
+
+.btnsize1 {
+  font-size: 13px;
+}
+
+.btnsize2 {
+  font-size: 20px;
+}
+
+.btncol1 {
+  background: radial-gradient(circle, $colorA 0%, $colorB 100%);
+  color: $colorD;
+}
+
+.btncol1:hover{
+  background: $colorA;
+  background: radial-gradient(circle, $colorB 0%, $colorA 100%);
+}
+
+.btncol2 {
+  background: radial-gradient(circle, $colorD 0%, $colorD 100%);
+  color: $background;
+}
+
+.btncol2:hover{
+  color: $background;
+  background: radial-gradient(circle, $colorD 0%, $background 100%);
+}
+
+.btncol3 {
+  background: radial-gradient(circle, $colorB 0%, $colorD 100%);
+  color: $background;
+}
+
+.btncol3:hover{
+  color: $background;
+  background: radial-gradient(circle, $colorD 0%, $colorB 100%);
+}

@@ -36,7 +36,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: row;
-    max-height: 710px;
+    max-height: 1100px;
     overflow: hidden;
     transition-duration: .3s;
     transition-timing-function: ease-out;
@@ -73,4 +73,11 @@
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+.presentation .btnwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
 }
