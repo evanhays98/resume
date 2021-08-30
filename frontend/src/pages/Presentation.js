@@ -107,6 +107,13 @@ const Presentation = () => {
                     <Formations {...Experience2}/>
                     <Formations {...Experience3}/>
                 </div>
+                <div className={experience ? 'btnwrap display' : 'btnwrap display-none'}>
+                    <button className='btn2' to="/"
+                            onMouseEnter={onHover}
+                            onMouseLeave={onHover}>
+                        Go further {hover ? <ArrowForward /> : <ArrowRight />}
+                    </button>
+                </div>
             </BodyCont>
 
             <div className='bodyCont'>
@@ -118,13 +125,14 @@ const Presentation = () => {
                     <Formations {...Formation1}/>
                     <Formations {...Formation2}/>
                     <Formations {...Formation3}/>
-                    <div className='btnwrap'>
+
+                </div>
+                <div className={formation ? 'btnwrap display' : 'btnwrap display-none'}>
                     <button className='btn2' to="/"
                             onMouseEnter={onHover}
                             onMouseLeave={onHover}>
                         Go further {hover ? <ArrowForward /> : <ArrowRight />}
                     </button>
-                    </div>
                 </div>
             </div>
             <Footer>

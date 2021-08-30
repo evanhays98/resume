@@ -75,9 +75,22 @@
     }
 }
 
-.presentation .btnwrap {
+.presentation .btnwrap.display {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 100px;
+    overflow: hidden;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+.presentation .btnwrap.display-none {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
 }
