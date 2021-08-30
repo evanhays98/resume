@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.ea357c91.chunk.css",
-    "main.js": "/resume/static/js/main.36a1d595.chunk.js",
-    "main.js.map": "/resume/static/js/main.36a1d595.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.8b90786f.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.8b90786f.js.map",
-    "static/js/2.c4fd633d.chunk.js": "/resume/static/js/2.c4fd633d.chunk.js",
-    "static/js/2.c4fd633d.chunk.js.map": "/resume/static/js/2.c4fd633d.chunk.js.map",
-    "index.html": "/resume/index.html",
-    "static/css/main.ea357c91.chunk.css.map": "/resume/static/css/main.ea357c91.chunk.css.map",
-    "static/js/2.c4fd633d.chunk.js.LICENSE.txt": "/resume/static/js/2.c4fd633d.chunk.js.LICENSE.txt",
-    "static/media/chine.png": "/resume/static/media/chine.c499af48.png",
-    "static/media/chumauldre.jpeg": "/resume/static/media/chumauldre.da11b0e7.jpeg",
-    "static/media/evanhays.jpg": "/resume/static/media/evanhays.7b5ed8a4.jpg",
-    "static/media/test.jpg": "/resume/static/media/test.56ef7695.jpg"
+    "main.css": "/resume/frontend/static/css/main.ea357c91.chunk.css",
+    "main.js": "/resume/frontend/static/js/main.36a1d595.chunk.js",
+    "main.js.map": "/resume/frontend/static/js/main.36a1d595.chunk.js.map",
+    "runtime-main.js": "/resume/frontend/static/js/runtime-main.794e7a18.js",
+    "runtime-main.js.map": "/resume/frontend/static/js/runtime-main.794e7a18.js.map",
+    "static/js/2.f92ac239.chunk.js": "/resume/frontend/static/js/2.f92ac239.chunk.js",
+    "static/js/2.f92ac239.chunk.js.map": "/resume/frontend/static/js/2.f92ac239.chunk.js.map",
+    "index.html": "/resume/frontend/index.html",
+    "static/css/main.ea357c91.chunk.css.map": "/resume/frontend/static/css/main.ea357c91.chunk.css.map",
+    "static/js/2.f92ac239.chunk.js.LICENSE.txt": "/resume/frontend/static/js/2.f92ac239.chunk.js.LICENSE.txt",
+    "static/media/chine.png": "/resume/frontend/static/media/chine.c499af48.png",
+    "static/media/chumauldre.jpeg": "/resume/frontend/static/media/chumauldre.da11b0e7.jpeg",
+    "static/media/evanhays.jpg": "/resume/frontend/static/media/evanhays.7b5ed8a4.jpg",
+    "static/media/test.jpg": "/resume/frontend/static/media/test.56ef7695.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b90786f.js",
-    "static/js/2.c4fd633d.chunk.js",
+    "static/js/runtime-main.794e7a18.js",
+    "static/js/2.f92ac239.chunk.js",
     "static/css/main.ea357c91.chunk.css",
     "static/js/main.36a1d595.chunk.js"
   ]
