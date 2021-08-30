@@ -2,12 +2,18 @@
   border:  1px solid $colorA;
   display: grid;
   width: 470px;
-  grid-template-columns: 120px 100px 100px 150px;
+  height: 350px;
+  grid-template-columns: 25% 21% 21% 33%;
   grid-template-rows: auto;
   grid-template-areas:
     "name name image image"
     "lieu lieu lieu time"
     "description description description description";
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
 }
 
 .Formation .wrapper {
@@ -27,10 +33,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 600;
+  padding-right: 4px;
+  padding-left: 4px;
 
-  @media screen and (max-width: 850px) {
-    padding-left: 8%;
-  }
 }
 
 .lieu {
@@ -42,16 +47,13 @@
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 400;
-
-  @media screen and (max-width: 850px) {
-    padding-left: 8%;
-  }
+  padding-right: 4px;
+  padding-left: 4px;
 }
 
 .time {
   grid-area: time;
   background-color: $background;
-
 }
 
 .description {
@@ -60,14 +62,12 @@
   color: $colorA;
   font-size: 13px;
   text-transform: uppercase;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 4px;
+  padding-left: 4px;
   display: block;
   font-weight: 400;
-
-  @media screen and (max-width: 850px) {
-    padding-left: 8%;
-  }
 }
 
 .image {
@@ -99,10 +99,11 @@
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-
-  @media screen and (max-width: 850px) {
-    padding-left: 8%;
+  padding-right: 4px;
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
   }
+
 }
 
 .temps {
@@ -112,7 +113,7 @@
   display: block;
   font-weight: 500;
 
-  @media screen and (max-width: 850px) {
-    padding-left: 8%;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
   }
 }

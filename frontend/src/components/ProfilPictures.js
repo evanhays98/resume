@@ -46,15 +46,11 @@ export const Img = styled.img`
 const ProfilPictures = () => {
 
     return (
-        <MainContainerC>
-            <MainWrapper>
-                <ImgWrap>
-                    <Img src={require("../images/evanhays.jpg").default} alt='profil'></Img>
-                </ImgWrap>
-            </MainWrapper>
-        </MainContainerC>
-
-        
+        <div className='profilePicture'>
+            <div className="wrap">
+                <img className='img' src={require('../images/evanhays.jpg').default}/>
+            </div>
+        </div>
     );
 };
 

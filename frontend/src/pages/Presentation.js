@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../components/Header';
 import Banner from "../components/Banner"
 import BodyContainer from "../components/BodyContainer"
@@ -9,6 +9,8 @@ import { homeObjOne, homeObjTwo } from '../Data/Data';
 import styled from 'styled-components'
 import loginImage from "../images/test.jpg";
 import Formations from "../components/Formations";
+import {Formation1} from "../Data/DataFormation";
+import {AiOutlineRight} from "react-icons/all";
 
 export const BodyCont = styled.div`
     width: 90%;
@@ -20,12 +22,13 @@ export const BodyCont = styled.div`
     border-radius: 20px;
     padding: 15px;
     padding-top: 150px;
-    padding-bottom: 40px;
 
 
     @media screen and (max-width: 768px) {
         width: 100%;
-        padding: 0px;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 150px;
     }
 `
 
@@ -61,10 +64,19 @@ export const ImageBG = styled.div`
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;@media screen and (max-width: 768px) {
+        top : -100px;
+    }
 `
 
 const Presentation = () => {
+
+    const [formation, setFormation] = useState(false)
+
+    const handleFormation = () => {
+        setFormation(!formation)
+    }
+
     return (
         <motion.div className="presentation"
             initial={{ opacity: 0 }}
@@ -76,8 +88,26 @@ const Presentation = () => {
             <Banner />
             <BodyCont>
                 <ProfilPictures />
-                <Formations></Formations>
+                <div className='titre' onClick={handleFormation}>
+                    <AiOutlineRight className={formation ? 'display-icons-none' : 'display-icons'}/>
+                    <h1 className='text'>Mes Formations</h1>
+                </div>
+                <div className={formation ? 'listwrapper display' : 'listwrapper display-none'}>
+                    <Formations {...Formation1}/>
+                    <Formations {...Formation1}/>
+                </div>
             </BodyCont>
+
+            <div className='bodyCont'>
+                <div className='titre' onClick={handleFormation}>
+                    <AiOutlineRight className={formation ? 'display-icons-none' : 'display-icons'}/>
+                    <h1 className='text'>Mes Formations</h1>
+                </div>
+                <div className={formation ? 'listwrapper display' : 'listwrapper display-none'}>
+                    <Formations {...Formation1}/>
+                    <Formations {...Formation1}/>
+                </div>
+            </div>
             <Footer>
             </Footer>
         </motion.div>
